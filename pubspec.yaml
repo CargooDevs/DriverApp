@@ -1,0 +1,33 @@
+name: cargoo_driver
+description: "Cargoo Motorista — receba pedidos, proponha preços, ganhe dinheiro"
+publish_to: 'none'
+version: 2.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  cargoo_shared:
+    path: ../cargoo_shared
+  geolocator: ^12.0.0
+  intl: ^0.19.0
+  supabase_flutter: ^2.5.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/cargoo_driver_app_icon_1024.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/driver/
